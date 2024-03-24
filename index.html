@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kirstin Brown - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Kirstin Brown
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          kirstinbrown@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456769876
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendation</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <!-- <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>-->
+        <img src="html_finalprojimages/person.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Kirstin Brown! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 3 years of experience in both application and presentation layers.
+            I have experience with many tools including Visual Studio Code, Git, Docker, Node.js, React, Angular, AWS, 
+            PostgreSQL, Webpack, and Jenkins to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/visual-studio-code.svg"/>
+            <h6>Visual Studio Code</h6>
+            <p>3 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/nodejs.svg"/>
+            <h6>Node.js</h6>
+            <p>3 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/docker.svg"/>
+            <h6>Docker</h6>
+            <p>1 year experience</p>
+        </div>  
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <ul>
+              <li>Developed a secure portfolio website for a client to showcase their acheievements using HTML and JavaScript </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Food Delivery App</h3>
+            <ul>
+              <li>Built and deployed a food delivery app for a client which included menus, cart options and a payment method</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Automotive Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a customer in the automotive industry and integrated it with a shopping cart, using Shopify for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working closely with Kirstin for 2 years on a variety of projects. 
+          Their exceptional skills and dedication to quality work make them an invaluable asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          One of Kirstin's standout qualities is their strong problem-solving ability. 
+          They have a keen eye for identifying issues and implementing effective solutions promptly. 
+          Kirstin always approached challenges with a positive attitude and a determination to find the best possible outcome.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Kirstin during the initial phase of our project which needed Web development. 
+          She consistently demonstrated expertise in both front-end and back-end development.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+            Thanks for leaving a recommendation!
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
